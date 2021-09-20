@@ -30,7 +30,7 @@
   - [Frequency Divider](#FDL)
   - [Complete PLL](#CPLLL)
 
-- [Acknowledgements](#acknowledgements)
+
 
 ## What is PLL? <a name = "PLL"></a>
 PLL is a feedback system which synchronises the output oscillations of the VCO to that of the reference (Generally Crystal Oscillator). It does so by minimizing the rate of change of phase error between the two oscillators. The phase detector compares the phase error between the two oscillators and convert it into a voltage proportional to it. This voltage is further fed to a Low pass filter (Charge Pump + Loop filter in our case) which averages it out and send it to the VCO’s control input. The VCO changes its output frequency in accordance to it, thus in turn minimizing the phase error. This process goes on iteratively till the frequencies of the two oscillators are matched. If we want to obtain a multiple of reference frequency, A divide by N circuit is placed in the feedback loop. If we do so the output will be N* ωref.
@@ -455,6 +455,7 @@ v1 1 0 1.8
 <p align="center">
  <img src="https://user-images.githubusercontent.com/52507285/133935975-a3ad5f0b-90ed-4e38-8547-eca6225ece82.jpg" >
 </p>
+
 
 
 
